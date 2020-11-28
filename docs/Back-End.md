@@ -33,6 +33,8 @@ A API REST do Express.JS foi planejada para o cadastro de cada um dos dados, al�
 
 Por questões de segurança e seguindo o padrão de aplicativos maiores, a API REST está hospedada em um servidor Heroku diferente do Banco de Dados, com as rotas sendo acessadas através da url base <a href="https://fast-mountain-02347.herokuapp.com/">https://fast-mountain-02347.herokuapp.com/</a> (*ex.: https://fast-mountain-02347.herokuapp.com/categories*). Em suma, a API media a comunicação entre o *Front-End* (vulgo *Client-side*) e o banco de dados.
 
+Os endpoints da API REST podem ser acessados <a href="https://app.swaggerhub.com/apis-docs/JonathanLemes/GRSoft-Teste/1.0.0#/users/post_users_signin">clicando aqui</a>. Para esta documentação em Swagger, optei por mostrar apenas os endpoints usados pelo Front-End, apesar do servidor dar suporte para outras requisições.
+
 ---
 
 ## Autenticação JWT
