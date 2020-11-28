@@ -30,8 +30,8 @@ O primeiro passo para a criação do app foi o design. Todo o planejamento foi f
 
 Seguindo o desafio, decidi separar o código em dois repositórios distintos, sendo um para o Back-End com uma API em <a href="https://expressjs.com/pt-br/">Express.JS</a> e o outro para o Front-End em <a href="https://reactnative.dev/">React Native</a>.
 
-1. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/docs/Back-End.md">Back-End</a>.
-2. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/docs/Front-End.md">Front-End</a>.
+1. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/tree/main/docs/Back-End.md">Back-End</a>.
+2. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/tree/main/docs/Front-End.md">Front-End</a>.
 
 ---
 
