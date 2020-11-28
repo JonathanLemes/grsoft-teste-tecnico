@@ -5,6 +5,41 @@ Teste técnico para a empresa GRSoft
 
 ---
 
+## Execução
+
+O app foi feito utilizando como base o framework <a href="https://docs.expo.io/">*Expo*</a>, para facilitar o *deploy* em nuvem. Dito isso, é necessário o download do app *Expo* para executar nativamente tanto em <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US">*Android*</a> quanto <a href="https://apps.apple.com/br/app/expo-client/id982107779">*iOS*</a>.
+
+### Expo Cloud
+
+Para executar no Expo Cloud, basta abrir o app Expo no seu celular e ler o QR Code projeto no site Expo.io, que pode ser acessado <a href="https://expo.io/@jonathanfillipe/projects/grsoft-teste-mobile">clicando aqui</a>.
+
+### Localmente
+
+Caso queira executar o projeto em sua máquina local (recomendável para ver o funcionamento da <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/blob/main/docs/Back-End.md#autentica%C3%A7%C3%A3o-jwt">autenticação JWT</a>), será necessário clonar o repositório <a href="https://github.com/JonathanLemes/grsoft-teste-mobile/">grsoft-teste-mobile</a>.
+
+```bash
+git clone https://github.com/JonathanLemes/grsoft-teste-mobile.git
+cd ./grsoft-teste-mobile
+```
+
+Certifique-se que você tem instalado em sua máquina o <a href="https://nodejs.org/en/download/">Node.JS</a> o gerenciador de pacotes <a href="https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable">Yarn</a> e o <a href="https://docs.expo.io/#quick-start">Expo-CLI</a> (instalado obrigatoriamente após o Node.JS).
+
+Após clonar o repositório e navegar para a pasta criada através do terminal, instale todas as dependências do projeto.
+
+```bash
+yarn install
+```
+
+Por fim, execute o Expo.
+
+```bash
+expo start
+```
+
+Acessando a porta <a href="http://localhost:19002/">19002</a> do seu navegador durante a execução do Expo, você terá acesso à Expo Developer Tools. Nesta dashboard, o app pode ser executado nativamente através do app Expo em seu celular com a leitura do QR Code do canto inferior esquerdo da tela.
+
+---
+
 ## Detalhes do desafio
 
 - Criar uma interface em React Native:
