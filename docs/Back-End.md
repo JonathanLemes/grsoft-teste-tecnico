@@ -4,6 +4,8 @@ Como já citado, a API do Back-End foi desenvolvida com o framework <a href="htt
 
 Para uma melhor organização do código, foi utilizado o Design Pattern <a href="https://pt.wikipedia.org/wiki/MVC">MVC</a> (<a href="https://github.com/JonathanLemes/grsoft-teste-backend/tree/main/src/models">Model</a>, <a href="https://github.com/JonathanLemes/grsoft-teste-backend/tree/main/src/views">View</a>, <a href="https://github.com/JonathanLemes/grsoft-teste-backend/tree/main/src/controllers">Controller</a>), organizado pelas pastas do <a href="https://github.com/JonathanLemes/grsoft-teste-backend/tree/main/src/">/src</a>. Apesar disto, a autenticação e seus Controllers ficaram separadas na pasta <a href="https://github.com/JonathanLemes/grsoft-teste-backend/tree/main/src/auth">/src/auth</a>.
 
+---
+
 ## Banco de dados
 
 ### Design
@@ -23,17 +25,23 @@ Para uma melhor abstração do banco de dados (além da fácil adaptação para 
 
 A criação de tabelas foi feita através de <a href="https://typeorm.io/#/migrations">*Migrations*</a> via *queryRunner* em conjunto com o *TypeORM/Table*, limitando sua criação e exclusão a comandos simples de terminal, sem necessitar da mudança das *queries* (o que ocorreria pela criação padrão de *queryRunner.query()*).
 
+---
+
 ## API REST Express.JS
 
 A API REST do Express.JS foi planejada para o cadastro de cada um dos dados, além das *queries* seleção para a recuperação dos dados. O servidor é criado via *ts-node-env* pela execução do arquivo <a href="">*server.ts*</a> e as rotas executadas pelo <a href="">routes.ts</a>. As rotas redirecionam cada requisição para o Controller responsável.
 
 Por questões de segurança e seguindo o padrão de aplicativos maiores, a API REST está hospedada em um servidor Heroku diferente do Banco de Dados, com as rotas sendo acessadas através da url base <a href="https://fast-mountain-02347.herokuapp.com/">https://fast-mountain-02347.herokuapp.com/</a> (*ex.: https://fast-mountain-02347.herokuapp.com/categories*).
 
+---
+
 ## Autenticação JWT
 
 Assim como as maiores aplicações atuais (*ex.: Facebook*), o login é feito pela geração e autenticação de um token JWT. Através do token JWT, o usuário pode loggar apenas no primeiro acesso ao app, mantendo este dado armazenado localmente para próximos acessos, sem necessitar a troca de dados sensíveis (e-mail e senha) enquanto o token não expirar. 
 
 Infelizmente, o servidor utilizado para a hospedagem do Front-End não dá suporte para o armazenamento local do token (ao menos em seu plano gratuito), mas ao rodá-lo localmente, apenas o primeiro login é necessário, o que comprova a eficácia do JWT. Seu funcionamento pode ser visto nos arquivos <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authController.ts">*authController.ts*</a> e <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authMiddleware.ts">*authMiddleware.ts</a>*.
+
+---
 
 ## TDD (Test-Driven Development)
 
