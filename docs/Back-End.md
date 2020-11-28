@@ -31,7 +31,7 @@ A criação de tabelas foi feita através de <a href="https://typeorm.io/#/migra
 
 A API REST do Express.JS foi planejada para o cadastro de cada um dos dados, além das *queries* seleção para a recuperação dos dados. O servidor é criado via *ts-node-env* pela execução do arquivo <a href="">*server.ts*</a> e as rotas executadas pelo <a href="">routes.ts</a>. As rotas redirecionam cada requisição para o Controller responsável.
 
-Por questões de segurança e seguindo o padrão de aplicativos maiores, a API REST está hospedada em um servidor Heroku diferente do Banco de Dados, com as rotas sendo acessadas através da url base <a href="https://fast-mountain-02347.herokuapp.com/">https://fast-mountain-02347.herokuapp.com/</a> (*ex.: https://fast-mountain-02347.herokuapp.com/categories*).
+Por questões de segurança e seguindo o padrão de aplicativos maiores, a API REST está hospedada em um servidor Heroku diferente do Banco de Dados, com as rotas sendo acessadas através da url base <a href="https://fast-mountain-02347.herokuapp.com/">https://fast-mountain-02347.herokuapp.com/</a> (*ex.: https://fast-mountain-02347.herokuapp.com/categories*). Em suma, a API media a comunicação entre o *Front-End* (vulgo *Client-side*) e o banco de dados.
 
 ---
 
@@ -39,7 +39,7 @@ Por questões de segurança e seguindo o padrão de aplicativos maiores, a API R
 
 Assim como as maiores aplicações atuais (*ex.: Facebook*), o login é feito pela geração e autenticação de um token JWT. Através do token JWT, o usuário pode loggar apenas no primeiro acesso ao app, mantendo este dado armazenado localmente para próximos acessos, sem necessitar a troca de dados sensíveis (e-mail e senha) enquanto o token não expirar. 
 
-Infelizmente, o servidor utilizado para a hospedagem do Front-End não dá suporte para o armazenamento local do token (ao menos em seu plano gratuito), mas ao rodá-lo localmente, apenas o primeiro login é necessário, o que comprova a eficácia do JWT. Seu funcionamento pode ser visto nos arquivos <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authController.ts">*authController.ts*</a> e <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authMiddleware.ts">*authMiddleware.ts</a>*.
+Infelizmente, o servidor utilizado para a hospedagem do *Front-End* não dá suporte para o armazenamento local do token (ao menos em seu plano gratuito), mas ao rodá-lo localmente, apenas o primeiro login é necessário, o que comprova a eficácia do JWT. Seu funcionamento pode ser visto nos arquivos <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authController.ts">*authController.ts*</a> e <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authMiddleware.ts">*authMiddleware.ts</a>*.
 
 ---
 
