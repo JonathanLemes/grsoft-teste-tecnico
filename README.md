@@ -24,6 +24,8 @@ O sistema deverá funcionar seguindo os passos abaixo:
 
 Prazo estimado para entrega até a proxima segunda-feira dia 30/11/2020
 
+---
+
 ## Desenvolvimento
 
 O primeiro passo para a criação do app foi o design. Todo o planejamento foi feito através do <a href="https://www.figma.com/">Figma</a> e pode ser acessado <a href="https://www.figma.com/file/auUufEiyCGwfAVO2QK505I/Projeto-GRSoft?node-id=0%3A1">clicando aqui</a>.
@@ -32,6 +34,12 @@ Seguindo o desafio, decidi separar o código em dois repositórios distintos, se
 
 1. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/tree/main/docs/Back-End.md">Back-End</a>.
 2. <a href="https://github.com/JonathanLemes/grsoft-teste-tecnico/tree/main/docs/Front-End.md">Front-End</a>.
+
+---
+
+## Versionamento
+
+Obviamente, o versionamento do código foi feito via Git, mas vale citar a utilização do *Commitzen*, juntamente com o <a href="https://github.com/commitizen/cz-cli">*cz-cli*</a>. Desta forma, todos os *commits* são padronizados, seguindo boas práticas de programação e versionamento, úteis principalmente em casos de grandes equipes trabalhando em um mesmo código.
 
 ---
 
