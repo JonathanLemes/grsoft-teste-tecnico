@@ -33,7 +33,7 @@ Por questões de segurança e seguindo o padrão de aplicativos maiores, a API R
 
 Assim como as maiores aplicações atuais (*ex.: Facebook*), o login é feito pela geração e autenticação de um token JWT. Através do token JWT, o usuário pode loggar apenas no primeiro acesso ao app, mantendo este dado armazenado localmente para próximos acessos, sem necessitar a troca de dados sensíveis (e-mail e senha) enquanto o token não expirar. 
 
-Infelizmente, o servidor utilizado para a hospedagem do Front-End não dá suporte para o armazenamento local do token (ao menos em seu plano gratuito), mas ao rodá-lo localmente, apenas o primeiro login é necessário, o que comprova a eficácia do JWT. Seu funcionamento pode ser visto nos arquivos <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authController.ts">*authController.ts*</a> e <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authMiddleware.ts">*authMiddleware.ts</a>*
+Infelizmente, o servidor utilizado para a hospedagem do Front-End não dá suporte para o armazenamento local do token (ao menos em seu plano gratuito), mas ao rodá-lo localmente, apenas o primeiro login é necessário, o que comprova a eficácia do JWT. Seu funcionamento pode ser visto nos arquivos <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authController.ts">*authController.ts*</a> e <a href="https://github.com/JonathanLemes/grsoft-teste-backend/blob/main/src/auth/authMiddleware.ts">*authMiddleware.ts</a>*.
 
 ## TDD (Test-Driven Development)
 
