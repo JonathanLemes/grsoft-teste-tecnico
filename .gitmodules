@@ -1,0 +1,6 @@
+[submodule "grsoft-teste-backend"]
+	path = grsoft-teste-backend
+	url = https://github.com/JonathanLemes/grsoft-teste-backend.git
+[submodule "grsoft-teste-mobile"]
+	path = grsoft-teste-mobile
+	url = https://github.com/JonathanLemes/grsoft-teste-mobile.git
