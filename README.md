@@ -1,7 +1,7 @@
 # GRSoft-Teste-Técnico
 Teste técnico para a empresa GRSoft
 
-[![Print_tela_principal](https://i.ibb.co/SXgyHyj/Designpng.png)](https://expo.io/@jonathanfillipe/projects/grsoft-teste-mobile)
+[![Print_design_Figma](https://i.ibb.co/SXgyHyj/Designpng.png)](https://expo.io/@jonathanfillipe/projects/grsoft-teste-mobile)
 
 ---
 
